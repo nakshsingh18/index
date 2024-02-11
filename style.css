@@ -3,8 +3,9 @@ body {
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
-
 
 #noButton {
   position: absolute;
@@ -23,7 +24,6 @@ body {
   font-family: "Nunito";
   font-size: 50px;
   font-weight: bold;
-
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -75,10 +75,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 p {
   color: white;
   margin-left: 50%;
 }
+
 p a {
   color: rgb(255, 255, 255);
   font-size: 20px;
