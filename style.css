@@ -3,21 +3,29 @@ body {
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure the body takes up the full height of the viewport */
+}
+
+.container {
+  height: 100%; /* Ensure the container takes up the full height of the body */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #noButton {
   position: absolute;
-  margin-left: 150px;
-  transition: 0.5s;
-  margin-top: 30px;
+  left: 20px; /* Adjust as needed */
+  top: 20px; /* Adjust as needed */
 }
 
 #yesButton {
   position: absolute;
-  margin-right: 150px;
-  margin-top: 30px;
+  right: 20px; /* Adjust as needed */
+  top: 20px; /* Adjust as needed */
 }
 
 .header_text {
@@ -25,28 +33,15 @@ body {
   font-size: 50px;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   color: #ffffff;
 }
 
-.text {
-  font-family: "Nunito";
-  font-size: 25px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
-
-.buttons {
+.gif_container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-bottom: 20px; /* Add margin at the bottom */
 }
 
 .btn {
@@ -68,22 +63,4 @@ body {
 .btn:hover {
   background-color: #ffffff;
   color: #017cff;
-}
-
-.gif_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-p {
-  color: white;
-  margin-left: 50%;
-}
-
-p a {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-weight: 600;
-  opacity: 0.25;
 }
