@@ -16,18 +16,6 @@ body {
   align-items: center;
 }
 
-#noButton {
-  position: absolute;
-  left: 20px; /* Adjust as needed */
-  top: 20px; /* Adjust as needed */
-}
-
-#yesButton {
-  position: absolute;
-  right: 20px; /* Adjust as needed */
-  top: 20px; /* Adjust as needed */
-}
-
 .header_text {
   font-family: "Nunito";
   font-size: 50px;
@@ -42,6 +30,10 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.buttons {
+  display: flex;
 }
 
 .btn {
