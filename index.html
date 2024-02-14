@@ -30,20 +30,20 @@
       function nextPage() {
         window.location.href = "yes.html";
       }
-
-      function moveButton() {
-        var button = document.getElementById("noButton");
-        var container = button.parentElement;
-        var containerRect = container.getBoundingClientRect();
-        var buttonRect = button.getBoundingClientRect();
-        var maxX = containerRect.width - buttonRect.width;
-        var maxY = containerRect.height - buttonRect.height;
-        var x = Math.random() * maxX;
-        var y = Math.random() * maxY;
-        button.style.left = `${x}px`;
-        button.style.top = `${y}px`;
-      }
-    </script>
+  function moveButton() {
+    console.log("Move button function called");
+    var button = document.getElementById("noButton");
+    var container = button.parentElement;
+    var containerRect = container.getBoundingClientRect();
+    var buttonRect = button.getBoundingClientRect();
+    var maxX = containerRect.width - buttonRect.width;
+    var maxY = containerRect.height - buttonRect.height;
+    var x = Math.random() * maxX;
+    var y = Math.random() * maxY;
+    button.style.left = `${x}px`;
+    button.style.top = `${y}px`;
+  }
+</script>
   </div>
 </body>
 </html>
