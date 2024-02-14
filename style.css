@@ -1,40 +1,54 @@
 body {
-  background-image: url('https://img.freepik.com/free-photo/flat-lay-frame-with-pink-heart-shape-copy-space_23-2148357847.jpg?w=1800&t=st=1707679494~exp=1707680094~hmac=b87b50abeeb208946c316f55484b97a8234196d87204d20ed71c9cece5846b05');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  margin: 0;
-  padding: 0;
-  height: 100vh; /* Ensure the body takes up the full height of the viewport */
-}
-
-.container {
-  height: 100%; /* Ensure the container takes up the full height of the body */
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+
+  background: linear-gradient(rgb(255, 192, 203), rgb(255, 105, 180));
+}
+
+
+#noButton {
+  position: absolute;
+  margin-left: 150px;
+  transition: 0.5s;
+  margin-top: 30px;
+}
+
+#yesButton {
+  position: absolute;
+  margin-right: 150px;
+  margin-top: 30px;
 }
 
 .header_text {
   font-family: "Nunito";
   font-size: 50px;
   font-weight: bold;
+
   text-align: center;
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: #ffffff;
 }
 
-.gif_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  
+.text {
+  font-family: "Nunito";
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 .buttons {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .btn {
@@ -51,13 +65,25 @@ body {
   border-radius: 12px;
   transition: background-color 0.3s ease;
   box-shadow: 0 3px 3px black;
-  width: 200px;
-  margin: 0 auto; 
 }
 
 .btn:hover {
   background-color: #ffffff;
   color: #017cff;
-  width: 200px; 
-  margin: 0 auto;
+}
+
+.gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  color: white;
+  margin-left: 50%;
+}
+p a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.25;
 }
